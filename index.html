@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Profile</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+    </header>
+    <nav>
+        <button onclick="scrollToSection('home')">Home</button>
+        <button onclick="scrollToSection('works')">Works</button>
+        <button onclick="scrollToSection('about')">About Me</button>
+        <button onclick="scrollToSection('contact')">Contacts</button>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>HI! it's me, NINJA</h2>
+            <p>This is the home section of my Figma profile.</p>
+            <img src="home.png/home.png" alt="Home Image">
+        </section>
+        <section id="works">
+            <h2>My Works</h2>
+            <p>Here, you can find information about my works.</p>
+            <div class="works-images">
+                <img src="works.png/works1.png" alt="Work 1">
+                <img src="works.png/works2.png" alt="Work 2">
+                <img src="works.png/works3.png" alt="Work 3">
+                <img src="works.png/works4.png" alt="Work 4">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>As an aspiring IT student, my journey may lack the glitz of extraordinary talent, but it thrives on a profound love for learning. Eager to explore the vast realms of technology, each hurdle is an opportunity to grow and every challenge, a chance to expand my knowledge. Passionate about the dynamic world of IT, I find joy in the continuous pursuit of understanding and mastering this ever-evolving field.</p>
+            <img src="about.png/429615328_971091714651591_2618846335155775212_n.png" alt="About Me Image">
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <div class="contact-images">
+                <a href="janinedemetrial4@gmail.com"><img src="contacts.png/contacts5.png" alt="Email"></a>
+                <a href="tel:639060940867"><img src="contacts.png/contacts2.png" alt="Phone"></a>
+                <a href="https://www.facebook.com/christinejanine.demetrial?mibextid=ZbWKwL"><img src="contacts.png/contacts1.png" alt="facebook"></a>
+                <a href="-"><img src="contacts.png/contacts3.png" alt="instagram"></a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
